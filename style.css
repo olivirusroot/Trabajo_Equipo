@@ -6,23 +6,23 @@
     /* Esto evitará que la imagen se repita */
     background-position: center center;
     /* Esto centrará la imagen en el footer */
-    background-color: black;
-    height: 20vh;
+    background-color:#E07A5F;
+    height: 40vh;
 
 }
 
 .mi-footer p {
     text-align: center;
-    color: white;
+    font-size: 30px;
+    color:white;
     padding-top:2vh;
-    margin: 0;
-    
+       
 }
 
 .foot_nav {
     text-align: center;
     /* Centra los botones en la sección */
-    padding: 1vh;    
+    padding: 10vh;    
     /* Agrega un poco de espacio alrededor de la sección */
 }
 
@@ -32,7 +32,7 @@
     /* Hace que los botones estén en línea */
     margin: 0 10px;
     /* Espacio entre los botones */
-    background-color: #333;
+    background-color: #3D405B;
     /* Color de fondo del botón */
     color: #fff;
     /* Color del ícono */
