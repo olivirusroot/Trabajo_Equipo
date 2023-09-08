@@ -1,3 +1,11 @@
+.mi-table {
+    width: 10vw;
+    display: flex;
+}
+.mi-table-tr{
+    margin-left: 20vw;
+}
+
 .mi-footer {
     background-image: url('footer.png');
     background-size: cover;
