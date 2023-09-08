@@ -1,5 +1,21 @@
+#body-content-container {
+    background-color: #d5b93f;
+    position: relative;
+    bottom: -15px;  /* change 300px to -15px */
+    }
+header{
+    height: 10vh;
+}
+
+main{
+    height: 70vh;
+}
+
+
 .mi-footer {
-    background-image: url('footer.png');
+    height: 20vh;
+    /*height: 60vh;*/
+    background-image: url('img/footer.png');
     background-size: cover;
     /* Esto hará que la imagen cubra todo el espacio del footer */
     background-repeat: no-repeat;
@@ -7,22 +23,22 @@
     background-position: center center;
     /* Esto centrará la imagen en el footer */
     background-color:#E07A5F;
-    height: 40vh;
-
+   
 }
 
 .mi-footer p {
     text-align: center;
     font-size: 30px;
     color:white;
-    padding-top:2vh;
+    padding-top:20px;
+    margin: 0;
        
 }
 
 .foot_nav {
     text-align: center;
-    /* Centra los botones en la sección */
-    padding: 10vh;    
+    /* Centra los botones en la sección */    
+    margin: 15px;    
     /* Agrega un poco de espacio alrededor de la sección */
 }
 
