@@ -1,15 +1,55 @@
 .mi-footer {
     background-image: url('footer.png');
-    background-size: cover;  /* Esto hará que la imagen cubra todo el espacio del footer */
-    background-repeat: no-repeat; /* Esto evitará que la imagen se repita */
-    background-position: center center; /* Esto centrará la imagen en el footer */
+    background-size: cover;
+    /* Esto hará que la imagen cubra todo el espacio del footer */
+    background-repeat: no-repeat;
+    /* Esto evitará que la imagen se repita */
+    background-position: center center;
+    /* Esto centrará la imagen en el footer */
     background-color: black;
-    height: 40vh;
+    height: 20vh;
+
+}
+
+.mi-footer p {
+    text-align: center;
+    color: white;
+    padding-top:2vh;
+    margin: 0;
     
 }
 
-.mi-footer p{
+.foot_nav {
     text-align: center;
-    color:white ;    
-    padding-top: 20vh;
+    /* Centra los botones en la sección */
+    padding: 1vh;    
+    /* Agrega un poco de espacio alrededor de la sección */
+}
+
+.social-btn {
+
+    display: inline-block;
+    /* Hace que los botones estén en línea */
+    margin: 0 10px;
+    /* Espacio entre los botones */
+    background-color: #333;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del ícono */
+    padding: 10px 15px;
+    /* Espacio alrededor del ícono */
+    border-radius: 50%;
+    /* Hace que el botón sea redondo */
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+    font-size: 20px;
+    /* Tamaño del ícono */
+    transition: background-color 0.3s;
+    /* Efecto de transición al pasar el mouse */
+
+}
+
+.social-btn:hover {
+    background-color: #555;
+    /* Cambia el color de fondo al pasar el mouse */
 }
