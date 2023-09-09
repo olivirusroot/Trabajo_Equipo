@@ -1,6 +1,7 @@
 .mi-table {
     width: 10vw;
     display: flex;
+    margin-right: 13vw;
 }
 .mi-table-tr{
     margin-left: 20vw;
