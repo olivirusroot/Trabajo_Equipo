@@ -13,3 +13,25 @@
     color:white ;    
     padding-top: 20vh;
 }
+.mimain_titulo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #E07A5F;
+    margin-left: 35%;
+    position: absolute;
+    margin-top: 10%;
+    font-size: 300%;
+}
+.mimain_foto{
+width: 98vw;
+background-color: #F4F1DE;
+border-radius: 80%;
+} 
+.mimain_parrafo{
+    position: absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 30%;
+    font-size: 200%;
+    color: #3D405B;
+    text-align: center;
+
+}
