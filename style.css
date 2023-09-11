@@ -1,11 +1,26 @@
+.mi-table-img {
+    width: 100px; 
+    border: 2px solid #E07A5F; 
+    border-radius: 5px; 
+}
+
 .mi-table {
-    width: 10vw;
-    display: flex;
-    margin-right: 13vw;
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    padding: 10px; 
+    text-align: center; 
+    background-color: #F2CC8F; 
+    border: 2px solid #E07A5F; 
+    border-radius: 5px; 
 }
-.mi-table-tr{
-    margin-left: 20vw;
+
+.mi-table-base {
+    background-color: #E07A5F;
+    width: 90vw; 
+    margin: 20px auto; 
+    border-radius: 2px; 
 }
+
 
 .mi-footer {
     background-image: url('footer.png');
