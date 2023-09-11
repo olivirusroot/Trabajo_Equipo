@@ -13,3 +13,50 @@
     color:white ;    
     padding-top: 20vh;
 }
+
+
+.mi-nav { 
+    background-color: #3D405B;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+.mi-nav li {
+ 
+    display: inline-block;
+}
+.mi-nav a {
+    color: #F4F1DE;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 80px;
+}
+.mi-nav a:hover {
+      
+        color: #E07A5F;
+        cursor: pointer;
+    
+}
+.img-01 {
+    padding left: 10px;
+    width: 25px;
+    height: 25px; 
+}
+.img-02 {
+    padding-left: 10px;
+    width: 25px;
+    height: 25px;
+
+}
+.img-03 {
+    padding-left: 10px;
+    width: 25px;
+    height: 25px;
+    
+}
+.img-04 {
+    padding-left: 10px;
+    width:  25px;
+    height: 25px;
+}
