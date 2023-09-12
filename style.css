@@ -1,17 +1,24 @@
-.mi-footer {
-    background-image: url('footer.png');
-    background-size: cover;  /* Esto hará que la imagen cubra todo el espacio del footer */
-    background-repeat: no-repeat; /* Esto evitará que la imagen se repita */
-    background-position: center center; /* Esto centrará la imagen en el footer */
-    background-color: black;
-    height: 40vh;
-    
+.mi-table-img {
+    width: 100px; 
+    border: 2px solid #E07A5F; 
+    border-radius: 5px; 
 }
 
-.mi-footer p{
-    text-align: center;
-    color:white ;    
-    padding-top: 20vh;
+.mi-table {
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    padding: 10px; 
+    text-align: center; 
+    background-color: #F2CC8F; 
+    border: 2px solid #E07A5F; 
+    border-radius: 5px; 
+}
+
+.mi-table-base {
+    background-color: #E07A5F;
+    width: 90vw; 
+    margin: 20px auto; 
+    border-radius: 2px; 
 }
 
 main{
@@ -249,4 +256,11 @@ main{
 .social-btn:hover {
     background-color: #555;
     /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+.mi-nav li {
+ 
+        display: inline-block;
+    
 }
