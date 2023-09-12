@@ -77,3 +77,10 @@
     background-color: #555;
     /* Cambia el color de fondo al pasar el mouse */
 }
+
+
+.mi-nav li {
+ 
+        display: inline-block;
+    
+}
