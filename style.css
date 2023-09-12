@@ -1,3 +1,27 @@
+.mimain_titulo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #E07A5F;
+    margin-left: 35%;
+    position: absolute; /* Esto hara que pueda colocar la letra encima de la imagen*/
+    margin-top: 10%;
+    font-size: 300%;
+}
+.mimain_foto{
+width: 98vw;
+background-color: #F4F1DE;
+border-radius: 80%; /* Esto hará que el borde del fondo de la imagen sea redonda */
+border-style: inset; /* Esto hara que el borde de la imagen tenga un lado oscuro y un lado claro*/
+border-color:#F2CC8F;
+} 
+.mimain_parrafo{
+    position: absolute; /* Esto hara que pueda colocar la letra encima de la imagen*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Esto hara que pueda cambiar el estilo de la letra*/
+    margin-top: 30%;
+    font-size: 200%;
+    color: #3D405B;
+    text-align: center;
+
+}
 .mi-nav { 
     background-color: #3D405B;
     padding: 10px 0;}
