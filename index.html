@@ -4,7 +4,7 @@
   <!-- Sección a cargo de Arelis -->
   <meta charset="UTF-8">
   <title>Título del Proyecto</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,27 +21,37 @@
 
   <main>
     <!-- Sección a cargo de Maleja (Contenido Principal) -->
-    <section id="home">
+    <section class="home">
       <h1>Bienvenidos a Nuestra Página</h1>
       <p>Esta es la sección principal de la página.</p>
     </section>
 
     <!-- Sección a cargo de Juanes (Artículos) -->
-    <article class="perro">
-      <h2>ELEGANCIA CANINA</h2>
-      <img src="img/perro.png" alt="perro-jpg">
-      <p>Desde collares con incrustaciones hasta correas ergonomicas, encuentra todo lo que tu perro necesita para lucir bien.</p>
-    </article>
+    <section class="contenedor">
+      <article class="juan-perro">
+        <h2>ELEGANCIA CANINA</h2>
+        <hr>
+        <img style="width: 330px; height: 220px;" src="img/perro2.webp" alt="perro-jpg">
+        <hr>
+        <p class="juan-p"><strong>Desde collares con incrustaciones hasta correas ergonomicas, encuentra todo lo que tu perro necesita para lucir bien.</strong></p>
+        <a href="">LEER MAS</a>
+        <hr>
+      </article>
 
-    <article class="gato">
-      <h2>DIVERSION FELINA</h2>
-      <img src="img/gato.png" alt="gato-png">
-      <p>Descubre juguetes diseñados para estimular la mente y el cuerpo de tu gato, garantizando horas de diversión.</p>
-    </article>
+      <article class="juan-gato">
+        <h2>DIVERSION FELINA</h2>
+        <hr>
+        <img style="width: 190px; height: 220px;" src="img/gato2.png" alt="gato-png">
+        <hr>
+        <p class="juan-p"><strong>juguetes diseñados para estimular la mente y el cuerpo de tu gato, garantizando horas de diversión.</strong></p>
+        <a href="">LEER MAS</a>
+        <hr>
+      </article>
+  </section>
 
     <!-- Sección a cargo de Daniel (Tablas) -->
     <table>
-      <thead>
+      <thead> 
         <tr>
           <th>Columna 1</th>
           <th>Columna 2</th>
