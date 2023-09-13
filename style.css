@@ -178,9 +178,19 @@ body {
 
 #Promotions {
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #E07A5F;
     font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #3D405B;
+    transition: 0.5s ease-in-out;
 }
+
+#Promotions:hover{
+    transform: scale(1.1);
+    transform: translateY(15%);
+}
+
 .After-part{
     font-size: large ;
 }
@@ -192,6 +202,8 @@ body {
     border-radius: 5px; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     transition: background-color 0.3s ease; 
+    display: inline-block;
+    cursor: pointer;
 }
 .button-table:hover {
     background-color: #E07A5F; 
@@ -213,26 +225,41 @@ body {
 
 .promotion-table th,
 .promotion-table td {
-    padding: 15px;
+    padding: 17px;
     text-align: center;
     border: 2px solid #E07A5F;
     border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .promotion-table th {
     background-color: #F2CC8F;
-    font-size: 16px;
+    font-size: 20px;
+    border: 3px solid #3D405B;
+    margin-top: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .promotion-table td img {
     max-width: 100px;
-    border: 2px solid #E07A5F;
+    border: 5px solid #3D405B;
     border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.promotion-table:hover td img{
+    transform: translateY(7%);
+}
+
+.d-img{
+    margin-top: 14px;
+    text-align: center;
 }
 
 .promotion-table td p {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Footer */
