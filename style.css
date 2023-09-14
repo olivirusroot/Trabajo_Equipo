@@ -61,40 +61,74 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #E07A5F;
     position: absolute;
-    top: -20%;
+    top: -23%;
     /* Ajusta según lo necesario */
     left: 5%;
     /* Ajusta según lo necesario */
-    margin-left: 35%;
-    position: absolute;
+    margin-left: 34%;
     margin-top: 10%;
-    font-size: 300%;
+    font-size: 400%;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #3D405B;
+    transition: 0.5s ease-in-out
 }
 
 .mimain_foto {
     width: 100%;
+    align-items: center center;
     background-color: #F4F1DE;
-    border-radius: 80%;
+    border-radius: 40%;
     border-style: inset;
     border-color: #F2CC8F;
-
+    margin-top:-12px ;
 }
+
 
 .mimain_parrafo {
     position: absolute;
+    align-items: center;
+    margin: 15%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 25%;
-    font-size: 200%;
+    margin-top: 29%;
+    font-size: 135%;
     color: #3D405B;
     text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.mimain_parrafo:hover{
+    transform: scale(1.1);
+} 
+
+.mimain_titulo:hover{
+    transform: translateY(15%);
 }
 
 /* Sección a cargo de Juanes (Artículos) */
 
 #Products {
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #E07A5F;
     font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #3D405B;
+    transition: 0.5s ease-in-out;
+}
+
+.juan-hr3{
+    height: 30%;
+    width: 65%;
+    text-align: center;
+    margin-left: 230px;
+    border:2px solid #3D405B;
+}
+
+#Products:hover{
+    transform: scale(1.1);
+    transform: translateY(15%);
 }
 
 .contenedor {
@@ -114,14 +148,15 @@ body {
 .juan-gato {
     display: inline-block;
     /* Esto es esencial para que se alineen horizontalmente */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 2px solid black;
     width: 300px;
     text-align: center;
     border-radius: 10px;
-    font-size: 13px;
+    font-size: 14px;
     background-color: #F2CC8F;
     transition: all 0.5s ease-in-out;
+    
 }
 
 
@@ -156,8 +191,8 @@ body {
 }
 
 .juan-p {
-    padding: 4px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .juan-perro a,
@@ -170,6 +205,55 @@ body {
     margin: 20px 50px;
     text-decoration: none;
     border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.juan-perro:hover img{
+    transform: scale(1.1);
+}
+
+.juan-perro img{
+    transition: all 0.5s ease;
+}
+
+.juan-gato:hover img{
+    transform: scale(1.1);
+}
+
+.juan-gato img{
+    transition: all 0.5s ease;
+}
+
+.juan-gato:hover a{
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.juan-perro:hover a{
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out
+}
+
+.contenedor{
+    display: flex;
+}
+
+article hr{
+    border: 2px solid;
+    margin: 7px;
+    border-radius: 4px;
+}
+
+article hr.juan-hr{
+    width: 65%;
+    text-align: center;
+    margin-left: 17%;
+}
+
+article hr.juan-hr2{
+    width: 72%;
+    text-align: center;
+    margin-left: 14%;
 }
 
 /* Sección a cargo de Daniel (Tablas) */
