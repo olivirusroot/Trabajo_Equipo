@@ -254,9 +254,8 @@ article hr.juan-hr2{
     width: 72%;
     text-align: center;
     margin-left: 14%;
+    
 }
-
-/* Sección a cargo de Daniel (Tablas) */
 
 /* Sección a cargo de Daniel (Tablas) */
 
@@ -297,6 +296,7 @@ article hr.juan-hr2{
     margin: 30px 0;
     border: solid 3px black;
     border-radius: 2px;
+    
 }
 
 .promotion-table {
@@ -305,6 +305,7 @@ article hr.juan-hr2{
     border-collapse: collapse;
     background-color: #E07A5F;
     border-radius: 2px;
+    
 }
 
 .promotion-table th,
