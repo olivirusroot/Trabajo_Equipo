@@ -484,3 +484,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #E07A5F;
 }
+
+#main_ok.desenfocado {
+    filter: blur(5px);
+}
