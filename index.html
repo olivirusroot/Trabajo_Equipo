@@ -20,10 +20,11 @@
         <li><a href="#Products">Productos</a></li><img src="img/productos.png" class="img-02" alt="">
         <li><a href="#Promotions">Promociones</a></li><img src="img/promociones.png" class="img-03" alt="">
         <li><a href="#Contacts">Contactos</a></li><img src="img/contactos.png" class="img-04" alt="">
+        <li><a href="login.html">Login</a></li>
+        <button id="btn-abrir-carrito">Carrito</button>
       </ul>
     </nav>
   </header>
-
   <main>
     <!-- Sección a cargo de Maleja (Contenido Principal) -->
     <section id="home">
@@ -33,6 +34,21 @@
         pensados para la comodidad de tu compañero.</p>
       <img class="mimain_foto" src="IMG/perros.png" alt="perros">
       
+      
+      <!--Pop up juanes-->
+      <dialog id="carrito">
+        <h2 class="h2-juan">CARRITO DE COMPRAS</h2><img class="img-carrito" src="img/carrito-compras.png" alt="carrito-compras">
+        <img class="img-comida" src="img/comidaperro.png" alt="comida-perro"><p class="p-popup">Alimento para perro taste of the wild sierra mountain 1kg 
+          <br>
+          <br>
+          <p class="contador">0</p>
+          <p class="contador-productos">0</p>
+          <button class="sumar">+</button>
+          <button class="restar">-</button>
+          <button class="btn-pagar">PAGAR</button>
+          <button id="btn-cerrar-carrito">X</button>
+      </dialog>
+
     </section>
 
     <!-- Sección a cargo de Juanes (Artículos) -->
@@ -123,5 +139,6 @@
   
       </section>
     </footer>
+    <script src="pop.js"></script>
 </body>
 </html>
