@@ -14,14 +14,16 @@ body {
 }
 
 .mi-nav ul {
-    margin: 0;
+    margin: 0px;
     /* Elimina el margen superior */
-    padding: 0;
+    padding: 0px;
     /* Elimina el padding por defecto */
 }
 
 .mi-nav li {
     display: inline-block;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -30,6 +32,9 @@ body {
     font-size: 20px;
     color: #81B29A;
     padding-left: 80px;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .mi-nav a:hover {
@@ -40,10 +45,13 @@ body {
 .img-01,
 .img-02,
 .img-03,
-.img-04 {
-    padding-left: 10px;
+.img-04,
+.carrito2 {
+    padding-left: 20px;
     width: 25px;
     height: 25px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .img-02 {
@@ -80,7 +88,7 @@ body {
     border-radius: 40%;
     border-style: inset;
     border-color: #F2CC8F;
-    margin-top:-12px ;
+    margin-top: -12px;
 }
 
 
@@ -98,11 +106,11 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.mimain_parrafo:hover{
+.mimain_parrafo:hover {
     transform: scale(1.1);
-} 
+}
 
-.mimain_titulo:hover{
+.mimain_titulo:hover {
     transform: translateY(15%);
 }
 
@@ -118,15 +126,15 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.juan-hr3{
+.juan-hr3 {
     height: 30%;
     width: 65%;
     text-align: center;
     margin-left: 230px;
-    border:2px solid #3D405B;
+    border: 2px solid #3D405B;
 }
 
-#Products:hover{
+#Products:hover {
     transform: scale(1.1);
     transform: translateY(15%);
 }
@@ -156,7 +164,7 @@ body {
     font-size: 14px;
     background-color: #F2CC8F;
     transition: all 0.5s ease-in-out;
-    
+
 }
 
 
@@ -208,53 +216,53 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-.juan-perro:hover img{
+.juan-perro:hover img {
     transform: scale(1.1);
 }
 
-.juan-perro img{
+.juan-perro img {
     transition: all 0.5s ease;
 }
 
-.juan-gato:hover img{
+.juan-gato:hover img {
     transform: scale(1.1);
 }
 
-.juan-gato img{
+.juan-gato img {
     transition: all 0.5s ease;
 }
 
-.juan-gato:hover a{
+.juan-gato:hover a {
     border-radius: 20px;
     transition: all 0.5s ease-in-out;
 }
 
-.juan-perro:hover a{
+.juan-perro:hover a {
     border-radius: 20px;
     transition: all 0.5s ease-in-out
 }
 
-.contenedor{
+.contenedor {
     display: flex;
 }
 
-article hr{
+article hr {
     border: 2px solid;
     margin: 7px;
     border-radius: 4px;
 }
 
-article hr.juan-hr{
+article hr.juan-hr {
     width: 65%;
     text-align: center;
     margin-left: 17%;
 }
 
-article hr.juan-hr2{
+article hr.juan-hr2 {
     width: 72%;
     text-align: center;
     margin-left: 14%;
-    
+
 }
 
 /* Sección a cargo de Daniel (Tablas) */
@@ -269,34 +277,37 @@ article hr.juan-hr2{
     transition: 0.5s ease-in-out;
 }
 
-#Promotions:hover{
+#Promotions:hover {
     transform: scale(1.1);
     transform: translateY(15%);
 }
 
-.After-part{
-    font-size: large ;
+.After-part {
+    font-size: large;
 }
-.button-table{
-    background-color: #F2CC8F; 
-    color: black; 
+
+.button-table {
+    background-color: #F2CC8F;
+    color: black;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s ease; 
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
     display: inline-block;
     cursor: pointer;
 }
+
 .button-table:hover {
-    background-color: #E07A5F; 
+    background-color: #E07A5F;
 }
+
 .table-container {
     text-align: center;
     margin: 30px 0;
     border: solid 3px black;
     border-radius: 2px;
-    
+
 }
 
 .promotion-table {
@@ -305,7 +316,7 @@ article hr.juan-hr2{
     border-collapse: collapse;
     background-color: #E07A5F;
     border-radius: 2px;
-    
+
 }
 
 .promotion-table th,
@@ -332,11 +343,11 @@ article hr.juan-hr2{
     transition: all 0.5s ease;
 }
 
-.promotion-table:hover td img{
+.promotion-table:hover td img {
     transform: translateY(7%);
 }
 
-.d-img{
+.d-img {
     margin-top: 14px;
     text-align: center;
 }
@@ -401,4 +412,39 @@ article hr.juan-hr2{
 
 .social-btn:hover {
     background-color: #555;
+}
+
+.lupa {
+    width: 25px;
+    height: 15px;
+    padding-left: 0px;
+    margin: 0px;
+    position: relative;
+    
+}
+
+.input {
+    position: relative;
+    margin-top: 30px;
+    padding-block: 30px;
+    transition: all 2s ease
+
+}
+
+.logo {
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    float: left;
+    float:inline-start
+}
+
+.carrito {
+    padding-inline-start: 250px;
+    width: 25px;
+    height: 25px;
+}
+
+.container {
+    box-sizing: border-box
 }
