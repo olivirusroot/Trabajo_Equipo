@@ -1,0 +1,210 @@
+
+.titulo{
+    font-size: 70px;
+    text-align: center;
+}
+h1{
+    
+    background: white;
+    background: radial-gradient(#e14115,#E07A5F,#E07A5F);
+    text-shadow: 1dvh 2px #3D405B;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}
+
+/* Estilos del contenedor del carrusel */
+.carrusel {
+    
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.carrusel-items {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+ 
+}
+
+.carrusel-item {
+    min-width: 500px;
+    max-width: 500px;
+    height: 400px;
+    outline: 2px solid black;
+    cursor: pointer;
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-item:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para el contenedor de tarjetas */
+.tarjetas-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Las tarjetas se envolverán automáticamente en múltiples filas si no caben en el ancho del contenedor */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+
+
+}
+.tarjetas-contenedor .tarjeta{
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Estilos para las tarjetas de productos */
+.tarjeta {
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: #3D405B;
+    position: relative;
+    border-radius: 20%;
+    /*la amnimacion esta encima*/
+    margin: 10px;
+    width: 250px;
+    height: 150px;
+    border: 3px solid #E07A5F;
+    border-radius: 10%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #fff;
+}
+.tarjeta::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+    #F2CC8F, #3D405B,#F4F1DE, #81B29A, #E07A5F,
+    #F2CC8F, #3D405B,#F4F1DE, #81B29A, #E07A5F
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+@keyframes glowing {
+    0%{
+    background-position: 0 0;
+    }
+50%{
+    background-position: 400% 0;
+}
+100%{
+    background-position: 0 0;
+}
+}
+
+.tarjeta img {
+    display: flex;
+    flex-wrap: flex;
+    width: 250px;
+    height: 150px;
+    border-radius: 10%;
+    align-items: center;
+}
+
+/* Estilos para el segundo contenedor de tarjetas */
+.tarjetas-contenedor2 {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en múltiples filas si no caben en el ancho del contenedor */
+    align-items: center;
+    margin-top: 5%; /* Ajusta el margen superior según sea necesario */
+    margin-left: 14%;
+}
+
+/* Estilos para las tarjetas en el segundo contenedor */
+.tarjetas-contenedor2 .tarjeta {
+    width: 200px; /* Ancho de la tarjeta */
+    height: 200px; /* Altura de la tarjeta */
+    border: 3px solid #E07A5F;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Estilos específicos para las imágenes dentro de las tarjetas */
+.tarjetas-contenedor2 .tarjeta img {
+    max-width: 100%;
+    max-height: 100px; /* Ajusta la altura de la imagen según sea necesario */
+    object-fit: cover;
+    border-radius: 20%;
+   
+}
+
+
+
+/* Estilos para el cuarto contenedor de tarjetas */
+.tarjetas-contenedor4 {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en múltiples filas si no caben en el ancho del contenedor */
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px ;
+
+   
+}
+
+/* Estilos para las tarjetas en el segundo contenedor */
+.tarjetas-contenedor4 .tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px; /* Ancho de la tarjeta */
+    height: 150px; /* Altura de la tarjeta */
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: inherit;
+    
+}
+
+/* Estilos específicos para las imágenes dentro de las tarjetas */
+.tarjetas-contenedor4 .tarjeta img {
+    max-width: 200%;
+    max: height 200px; /* Ajusta la altura de la imagen según sea necesario */
+    object-fit: cover;
+    border-radius: 20%;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Estilos específicos para el título, descripción y precio si es necesario */
+.tarjetas-contenedor4 .tarjeta h2 {
+    margin-top: 10px;
+}
+#subtitulo{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #E07A5F;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #3D405B;
+    transition: 0.5s ease-in-out;
+}
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+p{
+    text-align: center;
+    color:  #3D405B;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
