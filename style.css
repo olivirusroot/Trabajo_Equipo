@@ -504,6 +504,7 @@ article hr.juan-hr2{
 
     }
 
+    
     @keyframes glowing {
         0% {
             background-position: 0 0;
@@ -515,7 +516,7 @@ article hr.juan-hr2{
             background-position: 0 0;
         }
     }
-
+    
   .close:hover {
     background-color: #E07A5F;
   }
@@ -548,7 +549,7 @@ article hr.juan-hr2{
     background: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    border: 2px solid #3D405B;
+    border: 2px outset #3D405B;
     color: black;
     border-radius: 3px;
     max-width: 50px;

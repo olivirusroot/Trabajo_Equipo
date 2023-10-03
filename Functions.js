@@ -48,7 +48,7 @@ let inputDir = document.querySelector("#inputNum")
 let ButtonSuma = document.querySelector("#ButtonSuma")
 let ButtonResta = document.querySelector("#ButtonResta")
 
-function suma(e) { 
+function suma(e,) { 
 
   if (cantidadSuma >= 0){}
   cantidadSuma += 1;
