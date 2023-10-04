@@ -5,6 +5,7 @@
   <!-- Sección a cargo de Arelis -->
   <meta charset="UTF-8">
   <title>PetChic</title>
+  <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -13,23 +14,25 @@
 
 <body>
 
-  <header class:="container">
+  <header class="headerprincipal">
 
     <!-- Sección a cargo de Chris (Barra de navegación) -->
     <nav>
-
-      <ul class="mi-nav">
-        
+      <section class="section-header">
         <img src="img/logo.jpeg" class="logo" alt="">
-        <img src="img/lupa.png" class="lupa" alt=""><input type="search" name="search">
-        <!--<li><a href="#Home">Inicio</a></li> <img src="img/inicio.png" class="img-01" alt="imagen">-->
-        <li><a href="#Products">Productos</a></li><img src="img/productos.png" class="img-02" alt="">
-        <li><a href="#Promotions">Promociones</a></li><img src="img/promociones.png" class="img-03" alt="">
-        <li><a href="#Contacts">Contactos</a></li><img src="img/contactos.png" class="img-04" alt="">
-        <img src="img/carrito.png" class="carrito" alt="">
-
-      </ul>
-
+      </section>
+      <section class="search-bar"><input type="text" id="searchInput">
+        <!--button onclick="searchKeyword()>Buscar</button--> 
+      </section>
+      <section class="section-header2">
+        <ul class="mi-nav">
+          <!--<li><a href="#Home">Inicio</a></li> <img src="img/inicio.png" class="img-01" alt="imagen">-->
+          <li><a href="#Products">Productos</a></li><img src="img/productos.png" class="img-02" alt="">
+          <li><a href="#Promotions">Promociones</a></li><img src="img/promociones.png" class="img-03" alt="">
+          <li><a href="#Contacts">Contactos</a></li><img src="img/contactos.png" class="img-04" alt="">
+          <img src="img/carrito.png" class="carrito" alt="">
+        </ul>
+      </section>
     </nav>
   </header>
 
@@ -134,6 +137,7 @@
 
     </section>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
