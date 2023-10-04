@@ -44,7 +44,7 @@
       <box id="comentarios" class="comentariosM">
         <box class="popUpMale">
           <h1> ¡Nos importa tu opinion! </h1>
-          <p> queremos saber que piensas sobre nosotros</p>
+          
           <img class="perroygato" src="IMG/perroygato.png"> 
           <p class="nombre"> Nombre</p> <input type="text" id="Nombrecl" required minlength="5" maxlength="20" size="10"
             placeholder="escriba su nombre" />
@@ -58,14 +58,14 @@
           <a class="Reseña">Reseña</a> <br> <br> <textarea id="Reseñacl" required minlength="20" maxlength="300"
             size="10">  </textarea>
             <br> <br>
-            <button onclick="borrar()"> Enviar</button>
+            <button onclick="borrar()" class="EnviarMale" id="EnviarMale"> Enviar</button>
           
-          <button onclick="ocultarFormulario()" class="cerrarMale"> X </button>
+          <button onclick="ocultarFormulario()" class="cerrarMale"> <img class="xMale" src="IMG/x.png" alt="x"> </button>
         </box>
       </box>
     </section>
 
-    <script src="sciptHuella.js"> </script>
+    <script src="/JS/sciptHuella.js"> </script>
 
     <!-- Sección a cargo de Juanes (Artículos) -->
     <h2 id="Products">Productos</h2>

@@ -470,5 +470,28 @@ input + span {
     position: absolute;
 }
 .cerrarMale{
+    width: 10%;
+    margin-left: 60%;
+    background-color:#F2CC8F;
+    border-color:#E07A5F;
+    border-radius: 20%;
+    position: fixed;
     
+}
+.xMale{
+    width: 40%;
+
+}
+.EnviarMale{
+    background-color:#F2CC8F;
+    border-color:#E07A5F;
+    border-radius: 20%
+
+}
+.EnviarMale:hover{
+    background: #E07A5F;
+}
+.cerrarMale:hover{
+    background: #E07A5F;
+
 }
