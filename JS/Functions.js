@@ -2,31 +2,31 @@
 
 const open = document.querySelector('#open');
 const openbutton = document.querySelector('#openButton');
-const modal_container = document.getElementById('modal_container');
+const modalD_container = document.getElementById('modalD_container');
 const close = document.querySelector('#close');
-const closeOutside = document.querySelector("#modal_container")
+const closeOutside = document.querySelector("#modalD_container")
 let tiempoEspera = 400;
 let timer;
 
 function openButton(){
-  modal_container.classList.add('show');
+  modalD_container.classList.add('show');
 }
 
 function iniciarTemporizador(e) {
 
   timer = setTimeout(function () {
-    modal_container.classList.add('show');
+    modalD_container.classList.add('show');
   }, tiempoEspera);
 }
 function reiniciarTemporizador(e) {
   clearTimeout(timer);
 }
 function cerrar(e) {
-  modal_container.classList.remove('show');
+  modalD_container.classList.remove('show');
 }
 function cerrarOutside(e) {
-  if (e.target === modal_container){ 
-    modal_container.classList.remove('show');
+  if (e.target === modalD_container){ 
+    modalD_container.classList.remove('show');
    } 
   
 }
@@ -91,30 +91,30 @@ ButtonResta.addEventListener("click", resta);
 
 const openone = document.querySelector('#correaErgonomica');
 const openbutton1 = document.querySelector('#openButton1');
-const modal_container1 = document.getElementById('modal_container1');
+const modalD_container1 = document.getElementById('modalD_container1');
 const close1 = document.querySelector('#close1');
-const closeOutside1 = document.querySelector("#modal_container1")
+const closeOutside1 = document.querySelector("#modalD_container1")
 let tiempoEspera1 = 400;
 let timer1;
 
 function openButton1(){
-  modal_container1.classList.add('show');
+  modalD_container1.classList.add('show');
 }
 
 function iniciarTemporizador1(e) {
   timer1 = setTimeout(function () {
-    modal_container1.classList.add('show');
+    modalD_container1.classList.add('show');
   }, tiempoEspera1);
 }
 function reiniciarTemporizador1() {
   clearTimeout(timer1);
 }
 function cerrar1() {
-  modal_container1.classList.remove('show');
+  modalD_container1.classList.remove('show');
 }
 function cerrarOutside1(e) {
-  if (e.target === modal_container1 ) {
-    modal_container1.classList.remove('show');
+  if (e.target === modalD_container1 ) {
+    modalD_container1.classList.remove('show');
   }
 }
 
@@ -178,29 +178,29 @@ ButtonResta1.addEventListener("click", restaPopup2);
 
 const opensecond = document.querySelector('#juegeteInteractivo');
 const openbutton2 = document.querySelector('#openButton2');
-const modal_container2 = document.getElementById('modal_container2');
+const modalD_container2 = document.getElementById('modalD_container2');
 const close2 = document.querySelector('#close2');
-const closeOutside2 = document.querySelector("#modal_container2")
+const closeOutside2 = document.querySelector("#modalD_container2")
 let tiempoEspera2 = 400;
 let timer2;
 
 function openButton2 (){
-  modal_container2.classList.add('show');
+  modalD_container2.classList.add('show');
 }
 function iniciarTemporizador2(e) {
   timer2 = setTimeout(function () {
-    modal_container2.classList.add('show');
+    modalD_container2.classList.add('show');
   }, tiempoEspera2);
 }
 function reiniciarTemporizador2() {
   clearTimeout(timer2);
 }
 function cerrar2() {
-  modal_container2.classList.remove('show');
+  modalD_container2.classList.remove('show');
 }
 function cerrarOutside2(e) {
-  if (e.target === modal_container2 ) {
-    modal_container2.classList.remove('show');
+  if (e.target === modalD_container2 ) {
+    modalD_container2.classList.remove('show');
   }
 }
 
@@ -262,36 +262,34 @@ inputDir2.addEventListener("input",contadorPopup3);
 ButtonSuma2.addEventListener("click",sumaPopup3 );
 ButtonResta2.addEventListener("click", restaPopup3);
 
-/*---------------------------*/
-
 /*----------PopUp#4----------*/
 
 const openthird = document.querySelector('#cama');
 const openbutton3 = document.querySelector('#openButton3');
-const modal_container3 = document.getElementById('modal_container3');
+const modalD_container3 = document.getElementById('modalD_container3');
 const close3 = document.querySelector('#close3');
-const closeOutside3 = document.querySelector("#modal_container3")
+const closeOutside3 = document.querySelector("#modalD_container3")
 let tiempoEspera3 = 400;
 let timer3;
 
 function openButton3 (){
-  modal_container3.classList.add('show');
+  modalD_container3.classList.add('show');
 }
 
 function iniciarTemporizador3(e) {
   timer3 = setTimeout(function () {
-    modal_container3.classList.add('show');
+    modalD_container3.classList.add('show');
   }, tiempoEspera3);
 }
 function reiniciarTemporizador3() {
   clearTimeout(timer3);
 }
 function cerrar3() {
-  modal_container3.classList.remove('show');
+  modalD_container3.classList.remove('show');
 }
 function betacerrarOutside3(e) {
-  if (e.target === modal_container3 ) {
-    modal_container3.classList.remove('show');
+  if (e.target === modalD_container3 ) {
+    modalD_container3.classList.remove('show');
   }
 }
 
