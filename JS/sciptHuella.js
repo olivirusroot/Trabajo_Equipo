@@ -26,6 +26,7 @@ function mostrarFormulario() {
 
 function ocultarFormulario() {
   document.getElementById('comentarios').style.display = 'none';
-};
+}; 
+
 
 
