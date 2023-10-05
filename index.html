@@ -29,6 +29,9 @@
   <main id="main_ok">
     <!-- Sección a cargo de Maleja (Contenido Principal) -->
     <section id="home">
+      <button id="openMale" onclick="mostrarFormulario()"> <img class="opinionesF" src="IMG/huellitaboton.png"
+          href="#comentarios"> </button> 
+          
       <h1 class="mimain_titulo">PETCHIC</h1>
       <p class="mimain_parrafo">creemos que cada mascota merece lucir y sentirse bien.
         Descubre nuestra exclusiva gama de accesorios diseñados con amor y
@@ -36,6 +39,33 @@
       <img class="mimain_foto" src="IMG/perros.png" alt="perros">
 
     </section>
+    <!-- Sección a cargo de Maleja (encuesta) -->
+    <section>
+      <box id="comentarios" class="comentariosM">
+        <box class="popUpMale">
+          <h1> ¡Nos importa tu opinion! </h1>
+
+          <img class="perroygato" src="IMG/perroygato.png"> 
+          <p class="nombre"> Nombre</p> <input type="text" class="EntradaMale" id="Nombrecl" required minlength="5" maxlength="20" size="10"
+            placeholder="escriba su nombre" />
+          <span class="validity"></span>
+          <p class="Producto">Producto</p> <input type="text" id="Prodcutocl" required minlength="5" maxlength="30"
+            size="10" />
+          <p class="fecha">Fecha</p> <input type="date" id="fechacl">
+          <a class="puntuacion"> Puntuacion</a> <input type="text" id="Puntuacioncl" required minlength="1"
+            maxlength="3" size="10" />
+            <br> <br>
+          <a class="Reseña">Reseña</a> <br> <br> <textarea id="Reseñacl" required minlength="20" maxlength="300"
+            size="10">  </textarea>
+            <br> <br>
+            <button onclick="borrar()" class="EnviarMale" id="EnviarMale"> Enviar</button>
+
+          <button onclick="ocultarFormulario()" class="cerrarMale"> <img class="xMale" src="IMG/x.png" alt="x"> </button>
+        </box>
+      </box>
+    </section>
+
+    <script src="/JS/sciptHuella.js"> </script>
 
     <!-- Sección a cargo de Juanes (Artículos) -->
     <h2 id="Products">Productos</h2>
@@ -201,15 +231,15 @@
           <h2>Formulario de Contacto</h2>
           <form onsubmit="return showData();">
               <label for="name">Nombre :</label>
-              <input type="text" id="name" name="name" required>
+              <input type="text" class="richarinput" id="name" name="name" required>
               
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" class="richarinput"  id="email" name="email" required>
               
               <label for="message">Mensaje:</label>
-              <textarea id="message" name="message" required></textarea>
+              <textarea id="message" class="richarinput2"  name="message" required></textarea>
               
-              <input type="submit" value="Enviar">
+              <input class="richarinput"  type="submit" value="Enviar">
                 <!-- script alert datos -->
 
           </form>

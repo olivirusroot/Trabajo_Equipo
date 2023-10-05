@@ -616,7 +616,7 @@ label {
     font-weight: 600;
 }
 
-input[type="text"], input[type="email"], textarea {
+.richarinput[type="text"], .richarinput[type="email"], .richarinput2 {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -628,11 +628,11 @@ input[type="text"], input[type="email"], textarea {
     transition: border 0.3s;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+.richarinput[type="text"]:focus, .richarinput[type="email"]:focus, .richarinput2:focus {
     border: 1px solid #E07A5F;
 }
 
-input[type="submit"] {
+.richarinput[type="submit"] {
     padding: 10px 20px;
     background-color: #3D405B;
     color: #F4F1DE;
@@ -642,7 +642,100 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
+.richarinput[type="submit"]:hover {
     background-color: #E07A5F;
 }
+.opinionesF{
+    width: 100%;
+}
 
+#openMale{
+width: 3%;
+border-radius: 50%;
+position: fixed;
+margin-left: 5px;
+margin-bottom: 10px;
+margin-top: 10%;
+background-color:#F2CC8F;
+border-color:#E07A5F;
+}
+#openMale:hover{
+    background: #E07A5F;
+}
+
+.comentariosM{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.popUpMale{
+    position: fixed;
+    background-color: #F4F1DE;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.EntradaMale + span {
+    padding-right: 10px;
+  }
+.EntradaMale:invalid + span:after {
+    position: absolute;
+    content: "✖";
+    padding-left: 3px;
+    margin-left: 3%;
+    
+  }
+.EntradaMale:valid + span:after {
+    position: absolute;
+    content: "✓";
+    padding-left: 3px;
+    margin-left: 3%;
+
+  }
+.Reseña{
+    margin-top: 10%;
+}
+
+.perroygato{
+    width: 30%;
+    margin-left: 50% ;
+    margin-top: 8%;
+    position: absolute;
+}
+.cerrarMale{
+    width: 10%;
+    margin-left: 60%;
+    background-color:#F2CC8F;
+    border-color:#E07A5F;
+    border-radius: 20%;
+    position: fixed;
+    
+}
+.xMale{
+    width: 40%;
+
+}
+.EnviarMale{
+    background-color:#F2CC8F;
+    border-color:#E07A5F;
+    border-radius: 20%
+
+}
+.EnviarMale:hover{
+    background: #E07A5F;
+}
+.cerrarMale:hover{
+    background: #E07A5F;
+    
+
+}
