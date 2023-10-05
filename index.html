@@ -31,12 +31,43 @@
     <!-- Sección a cargo de Maleja (Contenido Principal) -->
     <section id="home">
       <h1 class="mimain_titulo">PETCHIC </h1>
+      <button id="openMale" onclick="mostrarFormulario()"> <img class="opinionesF" src="IMG/huellitaboton.png"
+          href="#comentarios"> </button> 
+          
+      <h1 class="mimain_titulo">PETCHIC</h1>
       <p class="mimain_parrafo">creemos que cada mascota merece lucir y sentirse bien.
         Descubre nuestra exclusiva gama de accesorios diseñados con amor y
         pensados para la comodidad de tu compañero.</p>
       <img class="mimain_foto" src="IMG/perros.png" alt="perros">
 
     </section>
+    <!-- Sección a cargo de Maleja (encuesta) -->
+    <section>
+      <box id="comentarios" class="comentariosM">
+        <box class="popUpMale">
+          <h1> ¡Nos importa tu opinion! </h1>
+
+          <img class="perroygato" src="IMG/perroygato.png"> 
+          <p class="nombre"> Nombre</p> <input type="text" class="EntradaMale" id="Nombrecl" required minlength="5" maxlength="20" size="10"
+            placeholder="escriba su nombre" />
+          <span class="validity"></span>
+          <p class="Producto">Producto</p> <input type="text" id="Prodcutocl" required minlength="5" maxlength="30"
+            size="10" />
+          <p class="fecha">Fecha</p> <input type="date" id="fechacl">
+          <a class="puntuacion"> Puntuacion</a> <input type="text" id="Puntuacioncl" required minlength="1"
+            maxlength="3" size="10" />
+            <br> <br>
+          <a class="Reseña">Reseña</a> <br> <br> <textarea id="Reseñacl" required minlength="20" maxlength="300"
+            size="10">  </textarea>
+            <br> <br>
+            <button onclick="borrar()" class="EnviarMale" id="EnviarMale"> Enviar</button>
+
+          <button onclick="ocultarFormulario()" class="cerrarMale"> <img class="xMale" src="IMG/x.png" alt="x"> </button>
+        </box>
+      </box>
+    </section>
+
+    <script src="JS/sciptHuella.js"> </script>
 
     <!-- Sección a cargo de Juanes (Artículos) -->
     <h2 id="Products">Productos</h2>
@@ -65,53 +96,119 @@
       </article>
     </section>
 
+    
     <!-- Sección a cargo de Daniel (Tablas) -->
     <h2 id="Promotions">PROMOCIONES</h2>
     <hr class="juan-hr3">
-    <section class="table-container">
-      <table class="promotion-table">
-        <thead>
-          <tr>
-            <th>Correa Ergonómica</th>
-            <th>Collar para Gatos</th>
-            <th>Juguete Interactivo</th>
-            <th>Cama</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <img src="img/Correa-Ergonomica.jpg" alt="Correa Ergonómica">
-              <p>Antes: $$$ <br> </p>
-              <p class="After-part">Después: $$ <br> </p>
-              <button class="button-table">¡Comprar Ahora!</button>
-            </td>
-            <td>
-              <img class="d-img" src="img/Collar-para-gatos.jpg" alt="Collar para Gatos">
-              <p>Antes: $$$ <br> </p>
-              <p class="After-part">Después: $$ <br> </p>
-              <button class="button-table">¡Comprar Ahora!</button>
-            </td>
-            <td>
-              <img src="img/Jugete-interactivo.jpg" alt="Juguete Interactivo">
-              <p>Antes: $$$ <br> </p>
-              <p class="After-part">Después: $$ <br> </p>
-              <button class="button-table">¡Comprar Ahora!</button>
-            </td>
-            <td>
-              <img src="img/Cama.jpg" alt="Cama">
-              <p>Antes: $$$ <br> </p>
-              <p class="After-part">Después: $$ <br> </p>
-              <button class="button-table">¡Comprar Ahora!</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+<section class="table-container">
+  <table class="promotion-table">
+    <thead>
+      <tr>
+        <th>Correa Ergonómica</th>
+        <th>Collar para Gatos</th>
+        <th>Juguete Interactivo</th>
+        <th>Cama</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Correa Ergonomica Popup-->
+      <figure> <dialog id="modalD_container" class="modalD-container">
+        <section id ="modalD"class="modalD">
+          <h1>Correa Ergonomica</h1>
+          <img src="img/Correa-Ergonomica.jpg" class="popupimg">
+          <h2>Cantidad</h2>
+          <button id="ButtonResta" class="Buttons" >-</button> <span id="outputSum" ><input type="number" id="inputNum" class="input1" ></span> <button id="ButtonSuma" class="Buttons">+</button> 
+          <h2>Precio Estimado</h2>
+          <h3><span id="outputNum">$$$ </span></h3>
+          <p>
+            Introduciendo nuestra innovadora Correa Ergonómica de última generación, diseñada pensando en tu comodidad y en la de tu mejor amigo peludo. Nuestra correa no es solo un accesorio, es una experiencia de paseo totalmente nueva.
+          </p>
+          <button id="close" class="close1">Cerrar</button>
+          <button id="close" class="comprarahora">Seguir la compra </button>
+        </section>
+      </dialog> </figure>
+      <!-- Collar para Gatos Popup -->
+      <figure> <dialog id="modalD_container1" class="modalD-container">
+        <section id ="modalD" class="modalD">
+          <h1>Collar para gatos </h1>
+          <img src="img/Collar-para-gatos.jpg" class="popupimg"   >
+          <h2>Cantidad</h2>
+          <button id="ButtonResta1" class="Buttons" >-</button> <span id="outputSum1" ><input type="number" id="inputNum1" class="input1" ></span> <button id="ButtonSuma1" class="Buttons" >+</button> 
+          <h2>Precio Estimado</h2>
+          <h3><span id="outputNum1">$$$ </span></h3>
+          <p>
+            En PetChic, entendemos que tu mascota es más que solo un animal; es un miembro de la familia. Por eso, hemos creado el Collar Elegante para Perros y Gatos, un accesorio que combina estilo, comodidad y seguridad para tu fiel amigo.
+          </p>
+          <button id="close1" class="close1" >Cerrar</button>
+          <button id="close" class="comprarahora">Seguir la compra </button>
+        </section>
+      </dialog> </figure>
+      <!-- Collar para Juguete Popup -->
+      <figure> <dialog id="modalD_container2" class="modalD-container">
+        <section id="modalD" class="modalD">
+          <h1>Juguete Interactivo </h1>
+          <img src="img/Jugete-interactivo.jpg" class="popupimg" >
+          <h2>Cantidad</h2>
+          <button id="ButtonResta2" class="Buttons" >-</button> <span id="outputSum2" ><input type="number" id="inputNum2" class="input1" ></span> <button id="ButtonSuma2" class="Buttons" >+</button> 
+          <h2>Precio Estimado</h2>
+          <h3><span id="outputNum2">$$$ </span></h3>
+          <p>
+            ¡Mantén a tu compañero peludo entretenido durante horas con nuestro Juguete Interactivo para Mascotas! Un juego inteligente que despierta su curiosidad y fortalece su vínculo contigo. ¡Ordena el tuyo hoy mismo y regálale a tu mascota momentos de diversión y alegría!
+          </p>
+          <button id="close2" class="close1" >Cerrar</button>
+          <button id="close" class="comprarahora">Seguir la compra</button>
+        </section>
+      </dialog> </figure>
+      <!-- Cama Interactivo Popup-->
+      <figure> <dialog id="modalD_container3" class="modalD-container">
+        <section id="modalD" class="modalD"  >
+          <h1>Cama </h1>
+          <img src="img/Cama.jpg" class="popupimg">
+          <h2>Cantidad</h2>
+          <button id="ButtonResta3" class="Buttons" >-</button> <span id="outputSum3" ><input type="number" id="inputNum3" class="input1" ></span> <button id="ButtonSuma3" class="Buttons" >+</button> 
+          <h2>Precio Estimado</h2>
+          <h3><span id="outputNum3">$$$ </span></h3>
+          <p>
+            Dale a tu mascota el descanso que se merece con nuestra Cama de Mascotas de Lujo. Fabricada con materiales suaves y acogedores, esta cama proporciona el máximo confort. Tu peludo amigo se sentirá mimado y relajado en su propio espacio. ¡Haz que cada siesta sea un placer!
+          </p>
+          <button id="close3" class="close1">Cerrar</button>
+          <button id="close" class="comprarahora">Seguir la compra </button>
+        </section>
+      </dialog> </figure>
+      <tr>
+        <td>
+          <img src="img/Correa-Ergonomica.jpg" alt="Correa Ergonómica" id="open">
+          <p>Antes: $20 USD <br> </p>
+          <p class="After-part" >Después: $15 USD <br> </p>
+          <button class="button-table" id="openButton">¡Comprar Ahora!</button>
+        </td>
+        <td>
+          <img class="d-img" src="img/Collar-para-gatos.jpg" alt="Collar para Gatos" id="correaErgonomica" >
+          <p>Antes: $12 USD <br> </p>
+          <p class="After-part" >Después: $8 USD <br> </p>
+          <button class="button-table" id="openButton1" >¡Comprar Ahora!</button>
+        </td>
+        <td>
+          <img src="img/Jugete-interactivo.jpg" alt="Juguete Interactivo" id="juegeteInteractivo" >
+           <p>Antes: $18 USD <br> </p>
+           <p class="After-part">Después: $12 USD <br> </p>
+          <button class="button-table" id="openButton2" >¡Comprar Ahora!</button>
+        </td>
+        <td>
+          <img src="img/Cama.jpg" alt="Cama" id="cama">
+          <p>Antes: $40 USD <br> </p>
+          <p class="After-part" >Después: $30 USD <br> </p>
+          <button class="button-table" id="openButton3" >¡Comprar Ahora!</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
     </section>
   </main>
 
-  <!-- Sección a cargo de Richard (Footer) -->
+    
+      <!-- Sección a cargo de Richard (Footer) -->
   <footer class="mi-footer">
     <!--<p>Dirección: "Calle Mascota Feliz, No. 123, Ciudad Animal"-->
     </p>
@@ -136,16 +233,16 @@
           <span id="closeModalBtn" class="close">&times;</span>
           <h2>Formulario de Contacto</h2>
           <form onsubmit="return showData();">
-              <label for="name">Nombre:</label>
-              <input type="text" id="name" name="name" required>
+              <label for="name">Nombre :</label>
+              <input type="text" class="richarinput" id="name" name="name" required>
               
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" class="richarinput"  id="email" name="email" required>
               
               <label for="message">Mensaje:</label>
-              <textarea id="message" name="message" required></textarea>
+              <textarea id="message" class="richarinput2"  name="message" required></textarea>
               
-              <input type="submit" value="Enviar">
+              <input class="richarinput"  type="submit" value="Enviar">
                 <!-- script alert datos -->
 
           </form>
@@ -153,6 +250,7 @@
   </section>
   </footer>
   <script src="js/script_footer.js"></script>
+    <script src="JS/Functions.js"></script>
 </body>
 
 </html>

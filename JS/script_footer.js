@@ -1,11 +1,9 @@
 document.getElementById('openModalBtn').addEventListener('click', function() {
   document.getElementById('contactModal').style.display = 'block';
-  main_ok.classList.add('desenfocado');
 });
 
 document.getElementById('closeModalBtn').addEventListener('click', function() {
   document.getElementById('contactModal').style.display = 'none';
-  main_ok.classList.remove('desenfocado');
 });
 
 window.addEventListener('click', function(event) {
