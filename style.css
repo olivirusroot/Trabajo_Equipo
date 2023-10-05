@@ -616,7 +616,7 @@ label {
     font-weight: 600;
 }
 
-input[type="text"], input[type="email"], textarea {
+.inputR[type="text"], .inputR[type="email"], textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -628,11 +628,11 @@ input[type="text"], input[type="email"], textarea {
     transition: border 0.3s;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+.inputR[type="text"]:focus, .inputR[type="email"]:focus, textarea:focus {
     border: 1px solid #E07A5F;
 }
 
-input[type="submit"] {
+.inputR[type="submit"] {
     padding: 10px 20px;
     background-color: #3D405B;
     color: #F4F1DE;
@@ -642,7 +642,7 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
+.inputR[type="submit"]:hover {
     background-color: #E07A5F;
 }
 
