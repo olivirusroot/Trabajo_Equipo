@@ -2,143 +2,54 @@ body {
     font-family: Arial, sans-serif;
     background-color: #F4F1DE;
 }
- /* Estilos para el logo */
- .logo {
-    width: 80px; /* Tamaño del logo */
-    height: auto; /* Mantener la proporción de aspecto */
-  }
-  
-  /* Estilos para la barra de búsqueda */
-  .search-bar {
-    display: flex;
-    align-items: center;
-  }
-  
-  #searchInput {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-left: 8px;
-  }
-  
-  /* Estilos para los elementos de navegación */
-  .mi-nav {
-    list-style: none;
-    display: flex;
-    background-color: #3D405B
-  }
-  
-  .mi-nav li {
-    margin-right: 40px;
-    position: relative;
-  }
-  
-  /* Estilos para las imágenes de los íconos de navegación */
-  .mi-nav img {
-    width: 24px; /* Tamaño de los íconos */
-   height: 24px;
-    margin-right: 100px;
-  }
-  
-  /* Estilos para el botón de búsqueda */
-  button {
-    background-color: #81B29A; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  /* Estilos para el carrito de compras */
-  .carrito {
-    width: 24px; /* Tamaño del ícono del carrito */
-    height: 24px;
-    margin-left: 100px;
-  }
-  /* Estilos para el encabezado */
-.mi-nav a {
-    color: #81B29A;
-    text-decoration: none;
 
-}
-.mi-nav a:hover {
-    color: #E07A5F;
-    cursor: pointer;
-}
-.section-header2 a {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 
-/*.mi-nav {
+.mi-nav {
     background-color: #3D405B;
-    margin: 10px;
-    padding: 10px;
+    margin-top: 0%;
+    padding: 20px 0;
     text-align: center;
-    
+    width: 100%;
     /*no hace nada*/
 }
 
-/*.mi-nav ul {
-    margin: 0px;
+.mi-nav ul {
+    margin: 0;
     /* Elimina el margen superior */
-    /*padding: 0px;
+    padding: 0;
     /* Elimina el padding por defecto */
 }
 
-/*.mi-nav li {
+.mi-nav li {
     display: inline-block;
-    justify-content: space-between;
-    align-items: center;
 }
 
 
-/*.mi-nav a {
+.mi-nav a {
     text-decoration: none;
     font-size: 20px;
     color: #81B29A;
     padding-left: 80px;
-    justify-content: space-between;
-    align-items: center;
-
 }
 
-/*.mi-nav a:hover {
+.mi-nav a:hover {
     color: #E07A5F;
     cursor: pointer;
 }
 
-/*.img-01,
+.img-01,
 .img-02,
 .img-03,
-.img-04,
-.carrito2 {
-    padding-left: 20px;
+.img-04 {
+    padding-left: 10px;
     width: 25px;
     height: 25px;
-    justify-content: space-around;
-    align-items: center;
 }
 
-/*.img-02 {
+.img-02 {
     padding-left: 11px;
 }
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    text-decoration: none;
-  }
-  
-
-
- 
- 
-  
 
 /* Sección a cargo de Maleja (Contenido Principal) */
 #home {
@@ -146,40 +57,28 @@ body {
     /* Esto es esencial para el posicionamiento absoluto de los hijos */
 }
 
-.mimain_titulo {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #E07A5F;
-    position: absolute;
-    top: -23%;
-    /* Ajusta según lo necesario */
-    left: 5%;
-    /* Ajusta según lo necesario */
-    margin-left: 34%;
-    margin-top: 10%;
-    font-size: 400%;
-    text-transform: uppercase;
-    text-shadow: 2px 2px #3D405B;
-    transition: 0.5s ease-in-out
-}
-
 .mimain_foto {
     width: 100%;
-    align-items: center center;
-    background-color: #F4F1DE;
-    border-radius: 40%;
-    border-style: inset;
-    border-color: #F2CC8F;
-    margin-top: -12px;
+    max-height: 400px; /* Adjust the value as needed */
+    margin: auto; /* Center the image */
+    border-radius: 10px; /* Adjust the border-radius */
+    overflow: hidden; /* Hide any content that exceeds the max-height */
 }
 
+.mimain_foto img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the entire container */
+}
 
 .mimain_parrafo {
     position: absolute;
-    align-items: center;
-    margin: 15%;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 29%;
-    font-size: 135%;
+    font-size: 1.5rem; /* Adjust the font size */
     color: #3D405B;
     text-align: center;
     font-weight: 600;
@@ -191,9 +90,6 @@ body {
     transform: scale(1.1);
 }
 
-.mimain_titulo:hover {
-    transform: translateY(15%);
-}
 
 /* Sección a cargo de Juanes (Artículos) */
 
@@ -207,15 +103,15 @@ body {
     transition: 0.5s ease-in-out;
 }
 
-.juan-hr3 {
+.juan-hr3{
     height: 30%;
     width: 65%;
     text-align: center;
     margin-left: 230px;
-    border: 2px solid #3D405B;
+    border:2px solid #3D405B;
 }
 
-#Products:hover {
+#Products:hover{
     transform: scale(1.1);
     transform: translateY(15%);
 }
@@ -245,7 +141,7 @@ body {
     font-size: 14px;
     background-color: #F2CC8F;
     transition: all 0.5s ease-in-out;
-
+    
 }
 
 
@@ -297,53 +193,53 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-.juan-perro:hover img {
+.juan-perro:hover img{
     transform: scale(1.1);
 }
 
-.juan-perro img {
+.juan-perro img{
     transition: all 0.5s ease;
 }
 
-.juan-gato:hover img {
+.juan-gato:hover img{
     transform: scale(1.1);
 }
 
-.juan-gato img {
+.juan-gato img{
     transition: all 0.5s ease;
 }
 
-.juan-gato:hover a {
+.juan-gato:hover a{
     border-radius: 20px;
     transition: all 0.5s ease-in-out;
 }
 
-.juan-perro:hover a {
+.juan-perro:hover a{
     border-radius: 20px;
     transition: all 0.5s ease-in-out
 }
 
-.contenedor {
+.contenedor{
     display: flex;
 }
 
-article hr {
+article hr{
     border: 2px solid;
     margin: 7px;
     border-radius: 4px;
 }
 
-article hr.juan-hr {
+article hr.juan-hr{
     width: 65%;
     text-align: center;
     margin-left: 17%;
 }
 
-article hr.juan-hr2 {
+article hr.juan-hr2{
     width: 72%;
     text-align: center;
     margin-left: 14%;
-
+    
 }
 
 /* Sección a cargo de Daniel (Tablas) */
@@ -358,37 +254,35 @@ article hr.juan-hr2 {
     transition: 0.5s ease-in-out;
 }
 
-#Promotions:hover {
+#Promotions:hover{
     transform: scale(1.1);
     transform: translateY(15%);
 }
 
-.After-part {
-    font-size: large;
+.After-part{
+    font-size: large ;
 }
-
-.button-table {
-    background-color: #F2CC8F;
-    color: black;
+.button-table{
+    background-color: #F2CC8F; 
+    color: black; 
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    border-radius: 5px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
     display: inline-block;
     cursor: pointer;
 }
-
 .button-table:hover {
-    background-color: #E07A5F;
+    background-color: #E07A5F; 
 }
-
 .table-container {
+    width: 100%;
     text-align: center;
     margin: 30px 0;
     border: solid 3px black;
     border-radius: 2px;
-
+    z-index: -1;
 }
 
 .promotion-table {
@@ -397,7 +291,7 @@ article hr.juan-hr2 {
     border-collapse: collapse;
     background-color: #E07A5F;
     border-radius: 2px;
-
+    z-index: -1;
 }
 
 .promotion-table th,
@@ -424,11 +318,11 @@ article hr.juan-hr2 {
     transition: all 0.5s ease;
 }
 
-.promotion-table:hover td img {
+.promotion-table:hover td img{
     transform: translateY(7%);
 }
 
-.d-img {
+.d-img{
     margin-top: 14px;
     text-align: center;
 }
@@ -439,7 +333,159 @@ article hr.juan-hr2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/*-----Css Popups------*/
+  
+  .modalD-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.3s ease;
+    z-index: 99;
+  }
+  
+  
+  .show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  
+  
+  .modalD {
+    background-color: #F2CC8F;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  
+  .modalD h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  
+  .modalD p {
+    font-size: 18px;
+    opacity: 0.9;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  
+  .close1 {
+    background-color: #3D405B;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 100px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    justify-content: space-around; 
+    z-index: 2;
+  }
+
+  .comprarahora {
+    background: #3D405B;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    border: none;
+    margin-left: 240px;
+    padding: 10px 20px;
+    color: azure;
+    font-size: 16px;
+    position: relative;
+    border-radius: 5px;
+    z-index: 2;
+  }
+
+    .comprarahora:hover:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+
+    }
+
+    
+    @keyframes glowing {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+    
+  .close1:hover {
+    background-color: #E07A5F;
+  }
+
+  .popupimg {
+    max-width: 100px;
+    border: 5px solid #3D405B;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+
+  .Buttons {
+    background: #F2CC8F;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    border: none;
+    color: black;
+    font-size: auto;
+    font-weight: bold;
+    position: relative;
+    border-radius: 5px;
+    padding-top: 10px;
+  }
+
+  .Buttons:hover {
+    color: #E07A5F;    
+  }
+
+  .input1{
+    background: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    border: 2px outset #3D405B;
+    color: black;
+    border-radius: 3px;
+    max-width: 50px;
+  }
+
 /* Footer */
+
 .mi-footer {
     height: 300px;
     background-image: url('img/footer.png');
@@ -489,10 +535,99 @@ article hr.juan-hr2 {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    
 }
 
+.show1 {
+    pointer-events: auto;
+
+  }
+  
 .social-btn:hover {
     background-color: #555;
 }
 
-  /* Estilos para la barra de navegación */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F4F1DE;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid #3D405B;
+    border-radius: 10px;
+
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #E07A5F;
+    background-color: #3D405B;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    transition: background-color 0.3s;
+}
+
+.close:hover {
+    background-color: #E07A5F;
+    color: #F4F1DE;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #3D405B;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3D405B;
+    background-color: #F4F1DE;
+    color: #3D405B;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border: 1px solid #E07A5F;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #3D405B;
+    color: #F4F1DE;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #E07A5F;
+}
+
