@@ -397,3 +397,8 @@ label {
 .richarinput[type="submit"]:hover {
     background-color: #E07A5F;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F1DE;
+}
