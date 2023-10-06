@@ -62,7 +62,7 @@ body{
 }
 
 .google-btn span{
-    color: white;
+    color: black;
     font-weight: 500;
     padding: 15px;
 }
@@ -106,7 +106,7 @@ body{
 }
 
 .twitter-btn span{
-    color: white;
+    color: black;
     font-weight: 500;
     padding: 15px;
 }
@@ -150,7 +150,7 @@ label span{
 }
 
 .section-inputs label input{
-    width: 70%;
+    width: 77%;
     background-color: #f3f3f4;
     border: none;
     padding: 10px 20px;
@@ -197,7 +197,7 @@ label input:focus{
 
 .submit-btn{
     background-color: #F2CC8F;
-    color: white;
+    color: black;
     font-weight: 500;
     font-size: 14pt;
     text-align: center;
@@ -216,4 +216,12 @@ label input:focus{
 
 .submit-btn:active{
     transform:scale(.95);
+}
+
+.container-span{
+    display:none;
+}
+
+.container-span_error{
+    color: red;
 }
