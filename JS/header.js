@@ -37,7 +37,7 @@ inputSearch.onkeyup = e => {
 function select(e) {
 	let selectUserData = inputSearch.value;
 	let isCorrect = suggestions.includes(inputSearch)
-	searchLink.href = `${inputSearch.value}.html`;
+	searchLink.href = `productos.html`;
 	searchLink.click()
 
 	

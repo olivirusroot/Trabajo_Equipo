@@ -7,7 +7,6 @@ body {
 .headerprincipal {
     position: relative;
     width: 100%;
-    z-index: 2;
     background-color: #2B2D42;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -37,7 +36,7 @@ body {
     justify-content: space-between;
 }
 
-#searchInput {
+.searchInput1 {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -86,7 +85,7 @@ body {
 }
 
 /* Estilos para el botón de búsqueda */
-button {
+.Buttonsearch {
     background-color: #81B29A;
     color: #fff;
     border: none;
@@ -96,13 +95,7 @@ button {
 }
 
 /* Estilos para el carrito de compras */
-.carrito {
-    width: 24px;
-    height: 24px;
-    margin-left: 15px;
-    
-}
-
+   
 
 /* Estilos para los enlaces del menú de navegación */
 .mi-nav a {
@@ -125,7 +118,7 @@ button {
 /* Sección a cargo de Maleja (Contenido Principal) */
 #home {
     position: relative; 
-    margin-top: 40px;
+    margin-top: 30px
     /* Esto es esencial para el posicionamiento absoluto de los hijos */
 }
 
@@ -369,7 +362,7 @@ article hr.juan-hr2{
     width: 100%;
     text-align: center;
     margin: 30px 0;
-    border: solid 3px black;
+    border: none;
     border-radius: 2px;
     z-index: -1;
 }
@@ -633,7 +626,7 @@ article hr.juan-hr2{
   }
   
 .social-btn:hover {
-    background-color: #555;
+    background-color: #554;
 }
 
 .modal {
@@ -690,7 +683,7 @@ label {
     font-weight: 600;
 }
 
-input[type="text"], input[type="email"], textarea {
+.richarinput[type="text"], .richarinput[type="email"], .richarinput2 {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -702,11 +695,11 @@ input[type="text"], input[type="email"], textarea {
     transition: border 0.3s;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+.richarinput[type="text"]:focus, .richarinput[type="email"]:focus, .richarinput2:focus {
     border: 1px solid #E07A5F;
 }
 
-input[type="submit"] {
+.richarinput[type="submit"] {
     padding: 10px 20px;
     background-color: #3D405B;
     color: #F4F1DE;
@@ -716,7 +709,156 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
+.richarinput[type="submit"]:hover {
     background-color: #E07A5F;
 }
+.opinionesF{
+    width: 100%;
+}
+
+#openMale{
+width: 3%;
+border-radius: 50%;
+position: fixed;
+margin-left: 5px;
+margin-bottom: 10px;
+margin-top: 10%;
+background-color:#F2CC8F;
+border-color:#E07A5F;
+}
+#openMale:hover{
+    background: #E07A5F;
+}
+
+.comentariosM{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.popUpMale{
+    position: fixed;
+    background-color: #F4F1DE;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px 0px #ccc;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.EntradaMale + span {
+    padding-right: 10px;
+  }
+.EntradaMale:invalid + span:after {
+    position: absolute;
+    content: "✖";
+    padding-left: 3px;
+    margin-left: 3%;
+    
+  }
+.EntradaMale:valid + span:after {
+    position: absolute;
+    content: "✓";
+    padding-left: 3px;
+    margin-left: 3%;
+
+  }
+.Reseña{
+    margin-top: 10%;
+}
+
+.perroygato{
+    width: 30%;
+    margin-left: 50% ;
+    margin-top: 8%;
+    position: absolute;
+}
+.cerrarMale{
+    width: 10%;
+    margin-left: 60%;
+    background-color:#F2CC8F;
+    border-color:#E07A5F;
+    border-radius: 20%;
+    position: fixed;
+    
+}
+.xMale{
+    width: 40%;
+
+}
+.EnviarMale{
+    background-color:#F2CC8F;
+    border-color:#E07A5F;
+    border-radius: 20%
+
+}
+.EnviarMale:hover{
+    background: #E07A5F;
+}
+.cerrarMale:hover{
+    background: #E07A5F;
+    
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F4F1DE;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid #3D405B;
+    border-radius: 10px;
+
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #E07A5F;
+    background-color: #3D405B;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    transition: background-color 0.3s;
+}
+
+.close:hover {
+    background-color: #E07A5F;
+    color: #F4F1DE;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #3D405B;
+    font-weight: 600;
+}
+
 
