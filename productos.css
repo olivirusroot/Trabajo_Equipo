@@ -208,3 +208,48 @@ p{
 }
 
 
+.mi-nav {
+    background-color: #3D405B;
+    margin-top: 0%;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    /*no hace nada*/
+}
+
+.mi-nav ul {
+    margin: 0;
+    /* Elimina el margen superior */
+    padding: 0;
+    /* Elimina el padding por defecto */
+}
+
+.mi-nav li {
+    display: inline-block;
+}
+
+
+.mi-nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #81B29A;
+    padding-left: 80px;
+}
+
+.mi-nav a:hover {
+    color: #E07A5F;
+    cursor: pointer;
+}
+
+.img-01,
+.img-02,
+.img-03,
+.img-04 {
+    padding-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.img-02 {
+    padding-left: 11px;
+}
