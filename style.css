@@ -42,8 +42,26 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-left: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
-
+#button {
+    position: relative;
+    cursor: pointer;
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+    align-items: center;
+}
+.icon2{
+    color: black;
+    position: relative;
+    cursor: pointer;
+}
+.container-suggestions{
+    display: none;
+}
 /* Estilos para los elementos de navegación */
 .mi-nav {
     list-style: none;
