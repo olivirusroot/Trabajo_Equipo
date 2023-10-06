@@ -25,24 +25,24 @@
         </section>
         <hr class="separator">
         <section class="registration-form">
-            <form action="" method="">
+            <form id="form-id">
                 <section class="section-inputs">
                     <label for="name">
                         <span>Name</span>
-                        <input id="name" name="name" />
+                        <input id="name-text" name="name" />
                     </label>
                     <label for="username">
                         <span>Username</span>
-                        <input id="username" name="username" />
+                        <input id="username-text" name="username" />
                     </label>
                     <label for=email>
                         <span>Email</span>
-                        <input id=email name="email" />
+                        <input class="email-" id="email-text" name="email" type="email"  />
                     </label>
                 </section>
                 <label for=password>
                     <span>Password</span>
-                    <input id=password name="password" type="password" placeholder="6+caracteres"/>
+                    <input id="password-text" name="password" type="password" placeholder="8 + caracteres"/>
                 </label>
                 <label for="checkbox" class="checkbox-label">
                     <input type="checkbox" id="checkbox">
@@ -50,7 +50,9 @@
                 </label>
                 <button type="submit" class="submit-btn">Crear Cuenta</button>
             </form>
+            <span id="error_message" class="container-span">Error</span>
         </section>
     </hr>
+    <script src="JS/login.js"></script>
 </body>
 </html>
