@@ -1,0 +1,438 @@
+/* Estilos para el encabezado */
+.headerprincipal {
+    background-color:#3D405B; /* Color de fondo del encabezado */
+    color: #d51e1e; /* Color del texto */
+    padding: 10px 0; /* Espaciado interno superior e inferior */
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-decoration: none;
+  }
+  
+  /* Estilos para el logo */
+  .logo {
+    width: 80px; /* Tamaño del logo */
+    height: auto; /* Mantener la proporción de aspecto */
+    justify-content: flex-start;
+  }
+  
+  /* Estilos para la barra de búsqueda */
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  #searchInput {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 8px;
+  }
+  
+  /* Estilos para los elementos de navegación */
+  .mi-nav {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+  }
+  
+  .mi-nav li {
+    margin-right: 40px;
+    position: relative;
+  }
+  
+  /* Estilos para las imágenes de los íconos de navegación */
+  .mi-nav img {
+    width: 24px; /* Tamaño de los íconos */
+   height: 24px;
+    margin-right: 100px;
+  }
+  
+  /* Estilos para el botón de búsqueda */
+  button {
+    background-color: #81B29A; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el carrito de compras */
+  .carrito {
+    width: 24px; /* Tamaño del ícono del carrito */
+    height: 24px;
+    margin-left: 100px;
+  }
+  /* Estilos para el encabezado */
+.mi-nav a {
+    color: #81B29A;
+    text-decoration: none;
+
+}
+.mi-nav a:hover {
+    color: #E07A5F;
+    cursor: pointer;
+}
+
+#home {
+    position: relative;
+    /* Esto es esencial para el posicionamiento absoluto de los hijos */
+}
+
+.mimain_titulo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #E07A5F;
+    position: absolute;
+    top: -23%;
+    /* Ajusta según lo necesario */
+    left: 5%;
+    /* Ajusta según lo necesario */
+    margin-left: 34%;
+    margin-top: 10%;
+    font-size: 400%;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #3D405B;
+    transition: 0.5s ease-in-out
+}
+
+.mimain_foto {
+    width: 100%;
+    align-items: center;
+    background-color: #F4F1DE;
+    border-radius: 40%;
+    border-style: inset;
+    border-color: #F2CC8F;
+    margin-top: -12px;
+}
+
+
+.mimain_parrafo {
+    position: absolute;
+    align-items: center;
+    margin: 15%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 29%;
+    font-size: 135%;
+    color: #3D405B;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.mimain_parrafo:hover {
+    transform: scale(1.1);
+}
+
+.mimain_titulo:hover {
+    transform: translateY(15%);
+}
+
+/* Sección a cargo de Juanes (Artículos) */
+
+#Products {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #E07A5F;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #3D405B;
+    transition: 0.5s ease-in-out;
+}
+
+.juan-hr3 {
+    height: 30%;
+    width: 65%;
+    text-align: center;
+    margin-left: 230px;
+    border: 2px solid #3D405B;
+}
+
+#Products:hover {
+    transform: scale(1.1);
+    transform: translateY(15%);
+}
+
+.contenedor {
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.juan-perro,
+.juan-gato {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.juan-perro,
+.juan-gato {
+    display: inline-block;
+    /* Esto es esencial para que se alineen horizontalmente */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid black;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #F2CC8F;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.juan-perro {
+    margin-right: 30px;
+}
+
+.juan-gato {
+    margin-left: 30px;
+}
+
+.juan-perro:hover,
+.juan-gato:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    color: white;
+    background-color: #E07A5F;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px black;
+    transform: translateY(2%);
+}
+
+.juan-perro img,
+.juan-gato img {
+    transition: all 0.5s ease;
+}
+
+.juan-perro:hover img,
+.juan-gato:hover img {
+    transform: scale(1.1);
+}
+
+.juan-p {
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.juan-perro a,
+.juan-gato a {
+    background-color: #81B29A;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.juan-perro:hover img {
+    transform: scale(1.1);
+}
+
+.juan-perro img {
+    transition: all 0.5s ease;
+}
+
+.juan-gato:hover img {
+    transform: scale(1.1);
+}
+
+.juan-gato img {
+    transition: all 0.5s ease;
+}
+
+.juan-gato:hover a {
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.juan-perro:hover a {
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out
+}
+
+.contenedor {
+    display: flex;
+}
+
+article hr {
+    border: 2px solid;
+    margin: 7px;
+    border-radius: 4px;
+}
+
+article hr.juan-hr {
+    width: 65%;
+    text-align: center;
+    margin-left: 17%;
+}
+
+article hr.juan-hr2 {
+    width: 72%;
+    text-align: center;
+    margin-left: 14%;
+
+}
+
+/* Sección a cargo de Daniel (Tablas) */
+
+#Promotions {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #E07A5F;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #3D405B;
+    transition: 0.5s ease-in-out;
+}
+
+#Promotions:hover {
+    transform: scale(1.1);
+    transform: translateY(15%);
+}
+
+.After-part {
+    font-size: large;
+}
+
+.button-table {
+    background-color: #F2CC8F;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button-table:hover {
+    background-color: #E07A5F;
+}
+
+.table-container {
+    text-align: center;
+    margin: 30px 0;
+    border: solid 3px black;
+    border-radius: 2px;
+
+}
+
+.promotion-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #E07A5F;
+    border-radius: 2px;
+
+}
+
+.promotion-table th,
+.promotion-table td {
+    padding: 17px;
+    text-align: center;
+    border: 2px solid #E07A5F;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.promotion-table th {
+    background-color: #F2CC8F;
+    font-size: 20px;
+    border: 3px solid #3D405B;
+    margin-top: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.promotion-table td img {
+    max-width: 100px;
+    border: 5px solid #3D405B;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.promotion-table:hover td img {
+    transform: translateY(7%);
+}
+
+.d-img {
+    margin-top: 14px;
+    text-align: center;
+}
+
+.promotion-table td p {
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Footer */
+.mi-footer {
+    height: 300px;
+    background-image: url('img/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #3D405B;
+}
+
+.mi-footer p {
+    text-align: center;
+    font-size: 30px;
+    color: #E07A5F;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.foot_nav {
+    text-align: center;
+    margin: 15px;
+    padding-top: 85px;
+}
+
+.social-btn {
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #E07A5F;
+    color: #fff;
+    width: 60px;
+    /*Ajustasegúnlonecesario*/
+    height: 60px;
+    /*Ajustasegúnlonecesario*/
+    /*padding:15px;
+    */
+    line-height: 60px;
+    /*Estodeberíaserigualalaalturaparacentrarverticalmenteelícono*/
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    /*padding-left: 80px;
+    */
+    text-align: center;
+    font-size: 30px;
+    transition: background-color 0.3s;
+    margin-bottom: 55px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.social-btn:hover {
+    background-color: #555;
+}
+  

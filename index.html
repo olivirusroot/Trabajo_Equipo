@@ -5,25 +5,49 @@
   <!-- Sección a cargo de Arelis -->
   <meta charset="UTF-8">
   <title>PetChic</title>
+  <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="style.css">
  
   <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+  <script src="https://kit.fontawesome.com/f8303d8072.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <header>
-    <!-- Sección a cargo de Chris (Barra de navegación) -->
-    <nav>
+  <header class="headerprincipal">
 
-      <ul class="mi-nav">
-        <!--<li><a href="#Home">Inicio</a></li> <img src="img/inicio.png" class="img-01" alt="imagen">-->
-        <li><a href="productos.html">Productos</a></li><img src="img/productos.png" class="img-02" alt="">
-        <li><a href="#Promotions">Promociones</a></li><img src="img/promociones.png" class="img-03" alt="">
-        <li><a href="#Contacts">Contactos</a></li><img src="img/contactos.png" class="img-04" alt="">
-      </ul>
+    <!-- Sección a cargo de Chris (Barra de navegación) -->
+    <nav class="navCris">
+      <section class="section-header">
+        <img src="img/logo.jpeg" class="logo" alt="">
+      </section>
+      <section class="search-bar active"><input type="text" id="searchInput" class= "searchInput1" placeholder="¿Que estas buscando?">
+        <button id="button-search" class="Buttonsearch">
+          <i class="fa-solid fa-magnifying-glass icon" >
+            <a href="" id="busqueda" target="_blank"></a> 
+          </i>
+        </button>
+        <ul class="container-suggestions active">
+          <li>sugerencia 1</li>
+          <li>sugerencia 2</li>
+          <li>sugerencia 3</li>
+        </ul>
+        <!--button onclick="searchKeyword()>Buscar</button-->
+      </section>
+      <section class="section-header2">
+        <ul class="mi-nav">
+          <!--<li><a href="#Home">Inicio</a></li> <img src="img/inicio.png" class="img-01" alt="imagen">-->
+          <img src="img/productos.png" class="img-02" alt="">
+          <li><a href="#Products">Productos</a></li>
+          <img src="img/promociones.png" class="img-03" alt="">
+          <li><a href="#Promotions">Promociones</a></li>
+          <img src="img/contactos.png" class="img-04" alt="">
+          <li><a href="#Contacts">Contactos</a></li>
+          <i class="fa-solid fa-cart-shopping icon2"></i>
+        </ul>
+      </section>
     </nav>
   </header>
 
@@ -34,7 +58,7 @@
       <button id="openMale" onclick="mostrarFormulario()"> <img class="opinionesF" src="IMG/huellitaboton.png"
           href="#comentarios"> </button> 
           
-      <h1 class="mimain_titulo">PETCHIC</h1>
+     
       <p class="mimain_parrafo">creemos que cada mascota merece lucir y sentirse bien.
         Descubre nuestra exclusiva gama de accesorios diseñados con amor y
         pensados para la comodidad de tu compañero.</p>
@@ -80,6 +104,7 @@
         <hr>
         <p class="juan-p"><strong>Desde collares con incrustaciones hasta correas ergonomicas, encuentra todo lo que tu
             perro necesita para lucir bien.</strong></p>
+
         <a href="productos.html#Perros">LEER MAS</a>
         <hr class="juan-hr2">
       </article>
@@ -225,8 +250,9 @@
       <a href="#form_contact" class="social-btn" id="openModalBtn">
         <i class="fas fa-question-circle"></i>
       </a>
-
     </section>
+  </footer>
+  
     <!-- Modal con el formulario de contacto -->
     <section id="contactModal" class="modal">
       <article class="modal-content">
@@ -250,7 +276,10 @@
   </section>
   </footer>
   <script src="js/script_footer.js"></script>
-    <script src="JS/Functions.js"></script>
+  <script src="JS/Functions.js"></script>
+  <script src="script.js/"></script>
+  <script src="JS/header.js"></script>
+  <script src="JS/suggestions.js"></script>
 </body>
 
 </html>
